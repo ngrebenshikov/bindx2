@@ -43,11 +43,6 @@ class BindableMacros {
 
         var classType = type.getClass();
         
-        Context.onMacroContextReused(function () {
-            processed = [];
-            return true;
-        });
-        
         if (bindingSignalProvider == null) {
             bindingSignalProvider = new bindx.macro.BindSignalProvider();
         }
